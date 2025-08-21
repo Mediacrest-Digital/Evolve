@@ -119,11 +119,11 @@ const Home = () => {
       title: "Physiotherapy",
       description: "Mobility and strength recovery",
     },
-    {
-      icon: Brain,
-      title: "Dementia Care",
-      description: "Specialized memory care",
-    },
+    // {
+    //   icon: Brain,
+    //   title: "Dementia Care",
+    //   description: "Specialized memory care",
+    // },
     {
       icon: Utensils,
       title: "Nutrition Support",
@@ -251,7 +251,7 @@ const Home = () => {
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
+      {/* Hero Section with theme background and right-aligned circles */}
       <section className="relative min-h-screen gradient-hero flex items-center overflow-hidden">
         {/* Floating Icons */}
         {floatingIcons.map((item, index) => (
@@ -266,97 +266,95 @@ const Home = () => {
           </motion.div>
         ))}
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            {/* Left Content */}
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-              className="space-y-8"
-            >
-              <div className="space-y-6">
-                <h1 className="text-4xl md:text-6xl font-bold text-primary-foreground leading-tight">
-                  Compassionate Care,{" "}
-                  <span className="text-gold">Right at Home</span>
-                </h1>
-                <p className="text-xl text-primary-foreground/90 leading-relaxed">
-                  Evolve Homecare KE delivers personalized home-based care to
-                  promote independence, comfort and dignity. A loved one
-                  deserves exceptional healthcare!
-                </p>
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          {/* Left: Main Hero Text and CTAs */}
+          <div className="flex flex-col items-start justify-center space-y-8 text-left">
+            <h1 className="text-4xl md:text-6xl font-bold text-primary-foreground leading-tight drop-shadow-lg">
+              Compassionate Care,{" "}
+              <span className="text-gold">Right at Home</span>
+            </h1>
+            <p className="text-xl text-white leading-relaxed font-semibold max-w-2xl">
+              Evolve Homecare KE delivers personalized home-based care to
+              promote independence, comfort and dignity. A loved one deserves
+              exceptional healthcare!
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Button
+                size="lg"
+                className="btn-hero text-gold-foreground font-bold px-8 shadow-medium drop-shadow-lg"
+                onClick={() =>
+                  document
+                    .getElementById("services")
+                    ?.scrollIntoView({ behavior: "smooth" })
+                }
+              >
+                Explore Our Services
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </Button>
+              <Button
+                variant="outline"
+                size="lg"
+                className="border-2 border-gold text-gold-foreground hover:bg-gold hover:text-primary font-bold shadow-soft drop-shadow-lg"
+                onClick={() =>
+                  document
+                    .getElementById("contact")
+                    ?.scrollIntoView({ behavior: "smooth" })
+                }
+              >
+                Contact Us
+              </Button>
+            </div>
+            {/* Trust Badges visible below CTAs */}
+            <div className="flex flex-wrap gap-6 pt-4">
+              <div className="flex items-center space-x-2 text-gold-foreground">
+                <CheckCircle className="w-5 h-5 text-gold" />
+                <span className="text-base font-bold drop-shadow-lg">
+                  24/7 Support
+                </span>
               </div>
+              <div className="flex items-center space-x-2 text-gold-foreground">
+                <Award className="w-5 h-5 text-gold" />
+                <span className="text-base font-bold drop-shadow-lg">
+                  Certified Caregivers
+                </span>
+              </div>
+              <div className="flex items-center space-x-2 text-gold-foreground">
+                <Heart className="w-5 h-5 text-gold" />
+                <span className="text-base font-bold drop-shadow-lg">
+                  Personalized Care
+                </span>
+              </div>
+            </div>
+          </div>
 
-              {/* CTAs */}
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button
-                  size="lg"
-                  className="btn-hero text-gold-foreground font-semibold px-8"
-                  onClick={() =>
-                    document
-                      .getElementById("services")
-                      ?.scrollIntoView({ behavior: "smooth" })
-                  }
-                >
-                  Explore Our Services
-                  <ArrowRight className="ml-2 w-5 h-5" />
-                </Button>
-                <Button
-                  variant="outline"
-                  size="lg"
-                  className="border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
-                  onClick={() =>
-                    document
-                      .getElementById("contact")
-                      ?.scrollIntoView({ behavior: "smooth" })
-                  }
-                >
-                  Contact Us
-                </Button>
-              </div>
+          {/* Right: Hero Images - Large circle and overlapping circles */}
+          <div className="relative w-full max-w-xl mx-auto aspect-square mb-10 flex items-center justify-end">
+            {/* Main large circular image */}
+            <div className="absolute top-2 right-0 rounded-full overflow-hidden shadow-2xl border-4 border-gold bg-card w-80 h-80 md:w-[26rem] md:h-[26rem]">
+              <img
+                src="./src/assets/knursing.jpg"
+                alt="Caregiver with elderly patient"
+                className="w-full h-full object-cover rounded-full"
+              />
+            </div>
 
-              {/* Trust Badges */}
-              <div className="flex flex-wrap gap-6 pt-4">
-                {trustBadges.map((badge, index) => (
-                  <motion.div
-                    key={index}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 1 + index * 0.2, duration: 0.5 }}
-                    className="flex items-center space-x-2 text-primary-foreground/80"
-                  >
-                    <badge.icon className="w-5 h-5 text-gold" />
-                    <span className="text-sm font-medium">{badge.text}</span>
-                  </motion.div>
-                ))}
-              </div>
-            </motion.div>
+            {/* Top overlapping circle */}
+            <div className="absolute top-10 right-64 w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden shadow-xl border-4 border-gold bg-card">
+              <img
+                src="./src/assets/Elder.jpg"
+                alt="Elderly woman smiling"
+                className="w-full h-full object-cover rounded-full"
+              />
+            </div>
 
-            {/* Right Content - Hero Image */}
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="relative"
-            >
-              <div className="glass-card rounded-3xl p-6 relative">
-                <img
-                  src=""
-                  alt="Professional caregiver providing compassionate home healthcare"
-                  className="w-full h-auto rounded-2xl shadow-large"
-                />
-                <div className="absolute -bottom-4 -right-4 bg-gold rounded-2xl p-4 shadow-gold">
-                  <div className="text-center">
-                    <div className="text-2xl font-bold text-gold-foreground">
-                      24/7
-                    </div>
-                    <div className="text-sm text-gold-foreground/80">
-                      Support
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
+            {/* Bottom overlapping circle */}
+            <div className="absolute bottom-6 right-56 w-36 h-36 md:w-44 md:h-44 rounded-full overflow-hidden shadow-xl border-4 border-gold bg-card">
+              <img
+                src="./src/assets/Nurse.jpg"
+                alt="Healthcare worker"
+                className="w-full h-full object-cover rounded-full"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -437,7 +435,7 @@ const Home = () => {
       </section>
 
       {/* How It Works Process */}
-      <section className="py-20 bg-white">
+       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <motion.div
@@ -484,10 +482,10 @@ const Home = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> 
 
       {/* Enhanced Why Choose Us */}
-      <section className="py-20 gradient-subtle">
+       <section className="py-20 gradient-subtle">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <motion.div
@@ -544,7 +542,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Testimonials Section */}
+      
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -603,7 +601,7 @@ const Home = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> 
 
       {/* FAQ Section */}
       <section className="py-20 gradient-subtle">
@@ -719,7 +717,7 @@ const Home = () => {
       </section>
 
       {/* Mission, Vision, Values */}
-      <section className="py-20 gradient-subtle">
+       <section className="py-20 gradient-subtle">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <motion.div
@@ -762,7 +760,7 @@ const Home = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> 
 
       {/* CTA Banner */}
       <section id="contact" className="py-16 gradient-gold">

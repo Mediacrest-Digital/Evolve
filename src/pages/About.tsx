@@ -8,17 +8,17 @@ const About = () => {
     {
       icon: Heart,
       title: "Mission",
-      description: "To provide compassionate, personalized home-based healthcare services that promote independence, comfort, and dignity for individuals in the familiar surroundings of their own homes."
+      description: "Our mission is to provide compassionate, personalized home-based healthcare that promotes patients’ well-being, independence and dignity in the comfort of their own homes."
     },
     {
       icon: Eye,
       title: "Vision", 
-      description: "To be Kenya's leading provider of home-based healthcare, setting the standard for excellence in personalized care while empowering families to maintain their loved ones' quality of life at home."
+      description: "Our vision is to be a leading home-based healthcare provider in Kenya and beyond, transforming lives through compassionate, personalized care."
     },
     {
       icon: Target,
       title: "Values",
-      description: "Compassion, Excellence, Integrity, Respect, and Innovation guide our commitment to delivering exceptional healthcare services with dignity and professionalism."
+      description: "Compassion: Providing empathetic and personalized care with kindness and respect for each individual's unique challenges. Excellence: Commitment to the highest standards of medical practice and continually improving knowledge and skills to deliver exceptional care."
     }
   ];
 

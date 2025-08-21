@@ -9,10 +9,10 @@ const Navigation = () => {
   const location = useLocation();
 
   const navItems = [
-    { name: "Home", path: "/T" },
+    { name: "Home", path: "/" },
     { name: "About", path: "/about" },
-    { name: "Services", path: "/servicesT" },
-    { name: "Care Team", path: "/care-teamT" },
+    { name: "Services", path: "/services" },
+    { name: "Care Team", path: "/care-team" },
     { name: "Contact", path: "/contact" },
   ];
 
@@ -24,9 +24,9 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
-            <img 
-              src="/lovable-uploads/0eb91781-dbc1-4ab3-8738-af65badf168d.png" 
-              alt="Evolve Homecare KE Logo" 
+            <img
+              src="./src/assets/Evolve.jpg"
+              alt="Evolve Homecare KE Logo"
               className="h-10 w-auto"
             />
           </Link>
@@ -53,9 +53,9 @@ const Navigation = () => {
                 <Phone className="w-4 h-4 mr-1" />
                 0112 829 166
               </a>
-              <Button variant="default" size="sm" className="btn-hero text-gold-foreground">
+              {/* <Button variant="default" size="sm" className="btn-hero text-gold-foreground">
                 Get Started
-              </Button>
+              </Button> */}
             </div>
           </div>
 
@@ -103,9 +103,9 @@ const Navigation = () => {
                   <Phone className="w-4 h-4 mr-2" />
                   0112 829 166
                 </a>
-                <Button variant="default" className="w-full btn-hero text-gold-foreground">
+                {/* <Button variant="default" className="w-full btn-hero text-gold-foreground">
                   Get Started
-                </Button>
+                </Button> */}
               </div>
             </div>
           </motion.div>

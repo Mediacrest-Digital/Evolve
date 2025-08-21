@@ -60,7 +60,7 @@ const Services = () => {
     },
     {
       icon: Activity,
-      title: "Post-Surgery Care",
+      title: "Home Based Nursing Care",
       description:
         "Specialized recovery support following surgical procedures, ensuring proper healing and rehabilitation in comfortable home environment.",
       features: [
@@ -70,87 +70,87 @@ const Services = () => {
         "Pain management assistance",
       ],
     },
-    {
-      icon: Brain,
-      title: "Dementia & Alzheimer's Care",
-      description:
-        "Specialized care for individuals with cognitive impairments, focusing on safety, routine, and maintaining quality of life.",
-      features: [
-        "Memory care activities",
-        "Behavioral support",
-        "Safety monitoring",
-        "Family education and support",
-      ],
-    },
-    {
-      icon: Stethoscope,
-      title: "Chronic Disease Management",
-      description:
-        "Ongoing support for managing chronic conditions like diabetes, heart disease, and COPD to maintain stability and prevent complications.",
-      features: [
-        "Vital signs monitoring",
-        "Symptom tracking",
-        "Diet and exercise support",
-        "Medical appointment coordination",
-      ],
-    },
-    {
-      icon: Baby,
-      title: "Pediatric Care",
-      description:
-        "Specialized care for children with medical needs, developmental delays, or disabilities in the comfort of their family home.",
-      features: [
-        "Developmental support",
-        "Medical care administration",
-        "Family training",
-        "Educational coordination",
-      ],
-    },
-    {
-      icon: Briefcase,
-      title: "Respite Care",
-      description:
-        "Temporary relief for family caregivers, providing professional care while allowing family members time for rest and personal needs.",
-      features: [
-        "Short-term care coverage",
-        "Family caregiver support",
-        "Flexible scheduling",
-        "Emergency backup care",
-      ],
-    },
-    {
-      icon: Home,
-      title: "Live-in Care",
-      description:
-        "24-hour comprehensive care provided by dedicated caregivers living in the client's home for maximum support and safety.",
-      features: [
-        "Round-the-clock supervision",
-        "Comprehensive care planning",
-        "Family-style living",
-        "Personalized attention",
-      ],
-    },
-    {
-      icon: Bandage,
-      title: "Wound Care",
-      description:
-        "Professional wound assessment, treatment, and monitoring by certified healthcare professionals to promote healing and prevent infection.",
-      features: [
-        "Wound assessment and cleaning",
-        "Dressing changes",
-        "Infection prevention",
-        "Healing progress monitoring",
-      ],
-    },
+    // {
+    //   icon: Brain,
+    //   title: "Dementia & Alzheimer's Care",
+    //   description:
+    //     "Specialized care for individuals with cognitive impairments, focusing on safety, routine, and maintaining quality of life.",
+    //   features: [
+    //     "Memory care activities",
+    //     "Behavioral support",
+    //     "Safety monitoring",
+    //     "Family education and support",
+    //   ],
+    // },
+    // {
+    //   icon: Stethoscope,
+    //   title: "Chronic Disease Management",
+    //   description:
+    //     "Ongoing support for managing chronic conditions like diabetes, heart disease, and COPD to maintain stability and prevent complications.",
+    //   features: [
+    //     "Vital signs monitoring",
+    //     "Symptom tracking",
+    //     "Diet and exercise support",
+    //     "Medical appointment coordination",
+    //   ],
+    // },
+    // {
+    //   icon: Baby,
+    //   title: "Pediatric Care",
+    //   description:
+    //     "Specialized care for children with medical needs, developmental delays, or disabilities in the comfort of their family home.",
+    //   features: [
+    //     "Developmental support",
+    //     "Medical care administration",
+    //     "Family training",
+    //     "Educational coordination",
+    //   ],
+    // },
+    // {
+    //   icon: Briefcase,
+    //   title: "Respite Care",
+    //   description:
+    //     "Temporary relief for family caregivers, providing professional care while allowing family members time for rest and personal needs.",
+    //   features: [
+    //     "Short-term care coverage",
+    //     "Family caregiver support",
+    //     "Flexible scheduling",
+    //     "Emergency backup care",
+    //   ],
+    // },
+    // {
+    //   icon: Home,
+    //   title: "Live-in Care",
+    //   description:
+    //     "24-hour comprehensive care provided by dedicated caregivers living in the client's home for maximum support and safety.",
+    //   features: [
+    //     "Round-the-clock supervision",
+    //     "Comprehensive care planning",
+    //     "Family-style living",
+    //     "Personalized attention",
+    //   ],
+    // },
+    // {
+    //   icon: Bandage,
+    //   title: "Wound Care",
+    //   description:
+    //     "Professional wound assessment, treatment, and monitoring by certified healthcare professionals to promote healing and prevent infection.",
+    //   features: [
+    //     "Wound assessment and cleaning",
+    //     "Dressing changes",
+    //     "Infection prevention",
+    //     "Healing progress monitoring",
+    //   ],
+    // },
   ];
 
   const extendedServices = [
     {
       category: "Medical Services",
       services: [
-        "IV therapy and infusion services",
-        "Catheter care and management",
-        "Tracheostomy care",
+        // "IV therapy and infusion services",
+        // "Catheter care and management",
+        // "Tracheostomy care",
         "Ventilator support",
         "Feeding tube management",
         "Colostomy and ostomy care",
@@ -162,7 +162,7 @@ const Services = () => {
         "Physical therapy services",
         "Occupational therapy",
         "Speech and language therapy",
-        "Respiratory therapy",
+        // "Respiratory therapy",
         "Nutritional counseling",
         "Mental health support",
       ],
@@ -170,12 +170,12 @@ const Services = () => {
     {
       category: "Specialized Care",
       services: [
-        "Palliative and end-of-life care",
+        // "Palliative and end-of-life care",
         "Cancer care support",
         "Stroke recovery care",
-        "Cardiac rehabilitation support",
-        "Diabetes management programs",
-        "Pain management services",
+        // "Cardiac rehabilitation support",
+        // "Diabetes management programs",
+        // "Pain management services",
       ],
     },
     {
@@ -186,7 +186,8 @@ const Services = () => {
         "Caregiver training programs",
         "Health monitoring systems",
         "Emergency response systems",
-        "Telehealth coordination",
+        "Pharmacy Services "
+        
       ],
     },
   ];

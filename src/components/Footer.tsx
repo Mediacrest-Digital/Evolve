@@ -9,28 +9,32 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 rounded-lg bg-gold flex items-center justify-center">
-                <span className="text-gold-foreground font-bold">E</span>
+                <div className="w-8 h-8 rounded-lg bg-gold flex items-center justify-center overflow-hidden">
+                  <img
+                    src="./src/assets/Evolve.jpg"
+                    alt="Evolve Homecare KE Logo"
+                    className="w-full h-full object-cover rounded-lg"
+                  />
+                </div>
+                <span className="text-lg font-bold">
+                  Evolve <span className="text-gold">Homecare KE</span>
+                </span>
               </div>
-              <span className="text-lg font-bold">
-                Evolve <span className="text-gold">Homecare KE</span>
-              </span>
-            </div>
             <p className="text-primary-foreground/80 text-sm leading-relaxed">
               Delivering compassionate, personalized home-based care to promote independence, 
               comfort, and dignity for your loved ones.
             </p>
             <div className="flex space-x-3">
-              <a href="#" className="text-primary-foreground/60 hover:text-gold transition-colors">
+              <a href="https://www.facebook.com/evolvehomecareke/" className="text-primary-foreground/60 hover:text-gold transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
               <a href="#" className="text-primary-foreground/60 hover:text-gold transition-colors">
                 <Twitter className="w-5 h-5" />
               </a>
-              <a href="#" className="text-primary-foreground/60 hover:text-gold transition-colors">
+              <a href="https://www.instagram.com/evolvehomecareke/" className="text-primary-foreground/60 hover:text-gold transition-colors">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="#" className="text-primary-foreground/60 hover:text-gold transition-colors">
+              <a href=" https://www.linkedin.com/company/evolve-homecare-ke/" className="text-primary-foreground/60 hover:text-gold transition-colors">
                 <Linkedin className="w-5 h-5" />
               </a>
             </div>
@@ -118,7 +122,7 @@ const Footer = () => {
         <div className="border-t border-primary-foreground/20 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-sm text-primary-foreground/60">
-              © 2024 Evolve Homecare KE. All rights reserved.
+              © 2025 Evolve Homecare KE. All rights reserved.
             </p>
             <div className="flex space-x-6">
               <a href="#" className="text-sm text-primary-foreground/60 hover:text-gold">
