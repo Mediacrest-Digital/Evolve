@@ -97,7 +97,7 @@
   }
 
   /* Hero Button Variants */
-  .btn-hero {
+  /* .btn-hero {
     @apply relative overflow-hidden;
     background: var(--tw-color-primary);
     color: var(--tw-color-primary-fg);
@@ -124,7 +124,7 @@
   .btn-hero:hover:before {
     @apply opacity-100;
     animation: shimmer 0.6s ease-out;
-  }
+  } */
 
   /* Floating Animation */
   .float-animation {

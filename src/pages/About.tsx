@@ -108,10 +108,10 @@ const About = () => {
                   matters most.
                 </p>
                 <p>
-                  Since our establishment, we have served over 500 patients and supported more than 
-                  100 families in their healthcare journey. Our commitment to excellence has made us 
-                  a trusted partner for healthcare professionals, families, and communities across Kenya.
+                  We provide personalized care plans that balance medical support with compassion, 
+                  ensuring every client feels safe, respected, and cared for at home.
                 </p>
+
               </div>
             </motion.div>
 
@@ -255,7 +255,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* What Sets Us Apart */}
+      
       <section className="py-20 gradient-subtle">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">

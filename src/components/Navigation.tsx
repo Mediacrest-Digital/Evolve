@@ -9,10 +9,10 @@ const Navigation = () => {
   const location = useLocation();
 
   const navItems = [
-    { name: "Home", path: "/" },
+    { name: "Home", path: "/T" },
     { name: "About", path: "/about" },
-    { name: "Services", path: "/services" },
-    { name: "Care Team", path: "/care-team" },
+    { name: "Services", path: "/servicesT" },
+    { name: "Care Team", path: "/care-teamT" },
     { name: "Contact", path: "/contact" },
   ];
 
@@ -30,6 +30,8 @@ const Navigation = () => {
               className="h-10 w-auto"
             />
           </Link>
+
+      
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">

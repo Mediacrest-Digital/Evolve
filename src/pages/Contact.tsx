@@ -190,10 +190,12 @@ const Contact = () => {
                     />
                   </div>
 
-                  <Button size="lg" className="w-full btn-hero text-gold-foreground">
+                  <Button size="lg" className="w-full transition-none animate-none cursor-pointer">
                     <Send className="w-5 h-5 mr-2" />
                     Send Message
                   </Button>
+
+
                 </CardContent>
               </Card>
             </motion.div>
@@ -263,23 +265,28 @@ const Contact = () => {
                       <a href="#" className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-primary-foreground transition-colors">
                         <Linkedin className="w-5 h-5" />
                       </a>
+                      
                     </div>
                   </div>
                 </CardContent>
               </Card>
 
               {/* Map Placeholder */}
-              <Card className="shadow-medium">
-                <CardContent className="p-0">
-                  <div className="h-64 bg-muted rounded-lg flex items-center justify-center">
-                    <div className="text-center space-y-2">
-                      <MapPin className="w-12 h-12 text-muted-foreground mx-auto" />
-                      <p className="text-muted-foreground font-medium">Interactive Map</p>
-                      <p className="text-sm text-muted-foreground">Serving Nairobi and surrounding areas</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
+<Card className="shadow-medium">
+  <CardContent className="p-0">
+    <div className="h-64 bg-muted rounded-lg overflow-hidden">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3791.5372313898592!2d36.83563407472434!3d-1.2260247987622794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f163b1c0bf8df%3A0x3bedeeda44ec5f4b!2sCiata%20City%20Mall%2C%20Ridgeways!5e1!3m2!1sen!2ske!4v1755763768049!5m2!1sen!2ske" 
+        width="100%" 
+        height="100%" 
+        style={{border: 0}}  
+        loading="lazy" 
+        referrerPolicy="no-referrer-when-downgrade"
+        title="Ciata City Mall, Ridgeways Location"
+      />
+    </div>
+  </CardContent>
+</Card>
             </motion.div>
           </div>
         </div>
