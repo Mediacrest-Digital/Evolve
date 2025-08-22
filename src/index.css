@@ -303,23 +303,23 @@
   }
   /* Gold color utilities for compatibility with codebase */
   .bg-gold {
-    background: linear-gradient(90deg, #ffd700 0%, #ffc300 100%);
+    background: linear-gradient(90deg, #e7c756 0%, #e7c756 100%);
   }
 
   .text-gold {
-    color: #ffd700;
+    color: #e7c756;
   }
 
   .text-gold-foreground {
-    color: #7c5c00;
+    color: #e7c756;
   }
 
   .border-gold {
-    border-color: #ffd700;
+    border-color: #e7c756;
   }
 
   .border-gold-foreground {
-    border-color: #7c5c00;
+    border-color: #e7c756;
   }
   .gradient-hero {
     background: var(--tw-color-primary);

@@ -250,9 +250,18 @@ const Home = () => {
   ];
 
   return (
-    <div className="min-h-screen">
+    <div
+      style={{
+        minHeight: "100vh",
+        background: "var(--color-bg)",
+        color: "var(--color-text)",
+      }}
+    >
       {/* Hero Section with theme background and right-aligned circles */}
-      <section className="relative min-h-screen gradient-hero flex items-center overflow-hidden">
+      <section
+        className="relative min-h-screen flex items-center overflow-hidden"
+        style={{ background: "#0d383e" }}
+      >
         {/* Floating Icons */}
         {floatingIcons.map((item, index) => (
           <motion.div
@@ -269,19 +278,47 @@ const Home = () => {
         <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left: Main Hero Text and CTAs */}
           <div className="flex flex-col items-start justify-center space-y-8 text-left">
-            <h1 className="text-4xl md:text-6xl font-bold text-primary-foreground leading-tight drop-shadow-lg">
+            <h1
+              style={{
+                color: "#e7c756",
+                fontWeight: "bold",
+                fontSize: "2.5rem",
+                lineHeight: "1.2",
+                textShadow: "0 2px 8px #0d383e",
+              }}
+            >
               Compassionate Care,{" "}
-              <span className="text-gold">Right at Home</span>
+              <span style={{ color: "#fff" }}>Right at Home</span>
             </h1>
-            <p className="text-xl text-white leading-relaxed font-semibold max-w-2xl">
+            <p
+              style={{
+                color: "#fff",
+                fontSize: "1.25rem",
+                fontWeight: 600,
+                maxWidth: "40rem",
+              }}
+            >
               Evolve Homecare KE delivers personalized home-based care to
               promote independence, comfort and dignity. A loved one deserves
               exceptional healthcare!
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                gap: "1rem",
+                flexWrap: "wrap",
+              }}
+            >
               <Button
                 size="lg"
-                className="btn-hero text-gold-foreground font-bold px-8 shadow-medium drop-shadow-lg"
+                style={{
+                  background: "#e7c756",
+                  color: "#0d383e",
+                  fontWeight: "bold",
+                  padding: "0.75rem 2rem",
+                  boxShadow: "0 2px 8px #0d383e",
+                }}
                 onClick={() =>
                   document
                     .getElementById("services")
@@ -289,12 +326,21 @@ const Home = () => {
                 }
               >
                 Explore Our Services
-                <ArrowRight className="ml-2 w-5 h-5" />
+                <ArrowRight
+                  style={{ marginLeft: "0.5rem", color: "#0d383e" }}
+                  className="ml-2 w-5 h-5"
+                />
               </Button>
               <Button
                 variant="outline"
                 size="lg"
-                className="border-2 border-gold text-gold-foreground hover:bg-gold hover:text-primary font-bold shadow-soft drop-shadow-lg"
+                style={{
+                  border: "2px solid #e7c756",
+                  color: "#e7c756",
+                  background: "#0d383e",
+                  fontWeight: "bold",
+                  boxShadow: "0 2px 8px #0d383e",
+                }}
                 onClick={() =>
                   document
                     .getElementById("contact")
@@ -305,24 +351,61 @@ const Home = () => {
               </Button>
             </div>
             {/* Trust Badges visible below CTAs */}
-            <div className="flex flex-wrap gap-6 pt-4">
-              <div className="flex items-center space-x-2 text-gold-foreground">
-                <CheckCircle className="w-5 h-5 text-gold" />
-                <span className="text-base font-bold drop-shadow-lg">
-                  24/7 Support
-                </span>
+            <div
+              style={{
+                display: "flex",
+                flexWrap: "wrap",
+                gap: "1.5rem",
+                paddingTop: "1rem",
+              }}
+            >
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  color: "#e7c756",
+                  fontWeight: "bold",
+                  fontSize: "1rem",
+                  textShadow: "0 2px 8px #0d383e",
+                }}
+              >
+                <CheckCircle
+                  style={{ color: "#e7c756", marginRight: "0.5rem" }}
+                  className="w-5 h-5"
+                />
+                <span>24/7 Support</span>
               </div>
-              <div className="flex items-center space-x-2 text-gold-foreground">
-                <Award className="w-5 h-5 text-gold" />
-                <span className="text-base font-bold drop-shadow-lg">
-                  Certified Caregivers
-                </span>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  color: "#e7c756",
+                  fontWeight: "bold",
+                  fontSize: "1rem",
+                  textShadow: "0 2px 8px #0d383e",
+                }}
+              >
+                <Award
+                  style={{ color: "#e7c756", marginRight: "0.5rem" }}
+                  className="w-5 h-5"
+                />
+                <span>Certified Caregivers</span>
               </div>
-              <div className="flex items-center space-x-2 text-gold-foreground">
-                <Heart className="w-5 h-5 text-gold" />
-                <span className="text-base font-bold drop-shadow-lg">
-                  Personalized Care
-                </span>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  color: "#e7c756",
+                  fontWeight: "bold",
+                  fontSize: "1rem",
+                  textShadow: "0 2px 8px #0d383e",
+                }}
+              >
+                <Heart
+                  style={{ color: "#e7c756", marginRight: "0.5rem" }}
+                  className="w-5 h-5"
+                />
+                <span>Personalized Care</span>
               </div>
             </div>
           </div>
@@ -360,7 +443,9 @@ const Home = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="py-20 bg-white">
+      <section
+        style={{ padding: "5rem 0", background: "#fff", color: "#0d383e" }}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
@@ -385,7 +470,9 @@ const Home = () => {
       </section>
 
       {/* Comprehensive Services Ecosystem */}
-      <section className="py-20 gradient-subtle">
+      <section
+        style={{ padding: "5rem 0", background: "#e7c75614", color: "#0d383e" }}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <motion.div
@@ -435,7 +522,9 @@ const Home = () => {
       </section>
 
       {/* How It Works Process */}
-       <section className="py-20 bg-white">
+      <section
+        style={{ padding: "5rem 0", background: "#fff", color: "#0d383e" }}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <motion.div
@@ -465,13 +554,26 @@ const Home = () => {
                 className="text-center relative"
               >
                 <div className="relative mb-6">
-                  <div className="w-20 h-20 rounded-full gradient-gold flex items-center justify-center mx-auto shadow-lg">
-                    <step.icon className="w-10 h-10 text-gold-foreground" />
-                  </div>
-                  <div className="absolute -top-2 -right-2 w-8 h-8 bg-primary rounded-full flex items-center justify-center">
-                    <span className="text-primary-foreground font-bold text-sm">
-                      {index + 1}
-                    </span>
+                  <div
+                    style={{
+                      width: "4rem",
+                      height: "4rem",
+                      borderRadius: "50%",
+                      background: "#e7c756",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      margin: "0 auto",
+                      boxShadow: "0 2px 8px #e7c75633",
+                    }}
+                  >
+                    <step.icon
+                      style={{
+                        color: "#fff",
+                        width: "2rem",
+                        height: "2rem",
+                      }}
+                    />
                   </div>
                 </div>
                 <h3 className="text-xl font-semibold text-primary mb-3">
@@ -482,10 +584,12 @@ const Home = () => {
             ))}
           </div>
         </div>
-      </section> 
+      </section>
 
       {/* Enhanced Why Choose Us */}
-       <section className="py-20 gradient-subtle">
+      <section
+        style={{ padding: "5rem 0", background: "#e7c75614", color: "#0d383e" }}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <motion.div
@@ -542,8 +646,9 @@ const Home = () => {
         </div>
       </section>
 
-      
-      <section className="py-20 bg-white">
+      <section
+        style={{ padding: "5rem 0", background: "#fff", color: "#0d383e" }}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <motion.div
@@ -601,10 +706,12 @@ const Home = () => {
             ))}
           </div>
         </div>
-      </section> 
+      </section>
 
       {/* FAQ Section */}
-      <section className="py-20 gradient-subtle">
+      <section
+        style={{ padding: "5rem 0", background: "#e7c75614", color: "#0d383e" }}
+      >
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <motion.div
@@ -662,7 +769,10 @@ const Home = () => {
       </section>
 
       {/* Services Preview */}
-      <section id="services" className="py-20 bg-white">
+      <section
+        id="services"
+        style={{ padding: "5rem 0", background: "#fff", color: "#0d383e" }}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <motion.div
@@ -690,34 +800,50 @@ const Home = () => {
                 transition={{ delay: index * 0.2, duration: 0.6 }}
                 viewport={{ once: true }}
               >
-                <Card className="service-card h-full">
+                <Card
+                  className="service-card h-full"
+                  style={{
+                    background: "#0d383e",
+                    color: "#fff",
+                    border: "2px solid #e7c756",
+                  }}
+                >
                   <CardContent className="p-8 text-center space-y-4">
-                    <div className="w-16 h-16 rounded-full gradient-hero flex items-center justify-center mx-auto">
-                      <service.icon className="w-8 h-8 text-primary-foreground" />
+                    <div
+                      className="w-16 h-16 rounded-full flex items-center justify-center mx-auto"
+                      style={{ background: "#e7c756" }}
+                    >
+                      <service.icon
+                        className="w-8 h-8"
+                        style={{ color: "#fff" }}
+                      />
                     </div>
-                    <h3 className="text-xl font-semibold text-primary">
+                    <h3
+                      className="text-xl font-semibold"
+                      style={{ color: "#e7c756" }}
+                    >
                       {service.title}
                     </h3>
-                    <p className="text-muted-foreground">
-                      {service.description}
-                    </p>
+                    <p style={{ color: "#fff" }}>{service.description}</p>
                   </CardContent>
                 </Card>
               </motion.div>
             ))}
           </div>
 
-          <div className="text-center">
+          {/* <div className="text-center">
             <Button size="lg" className="btn-hero text-gold-foreground">
               View All Services
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
-          </div>
+          </div> */}
         </div>
       </section>
 
       {/* Mission, Vision, Values */}
-       <section className="py-20 gradient-subtle">
+      <section
+        style={{ padding: "5rem 0", background: "#e7c75614", color: "#0d383e" }}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <motion.div
@@ -747,8 +873,22 @@ const Home = () => {
               >
                 <Card className="service-card h-full border-gold/20">
                   <CardContent className="p-8 text-center space-y-4">
-                    <div className="w-16 h-16 rounded-full gradient-gold flex items-center justify-center mx-auto">
-                      <value.icon className="w-8 h-8 text-gold-foreground" />
+                    <div
+                      style={{
+                        width: "4rem",
+                        height: "4rem",
+                        borderRadius: "50%",
+                        background: "#e7c756",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        margin: "0 auto",
+                        boxShadow: "0 2px 8px #e7c75633",
+                      }}
+                    >
+                      <value.icon
+                        style={{ color: "#fff", width: "2rem", height: "2rem" }}
+                      />
                     </div>
                     <h3 className="text-xl font-semibold text-primary">
                       {value.title}
@@ -760,10 +900,13 @@ const Home = () => {
             ))}
           </div>
         </div>
-      </section> 
+      </section>
 
       {/* CTA Banner */}
-      <section id="contact" className="py-16 gradient-gold">
+      {/* <section
+        id="contact"
+        style={{ padding: "4rem 0", background: "#e7c756", color: "#0d383e" }}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -772,33 +915,65 @@ const Home = () => {
             viewport={{ once: true }}
             className="text-center space-y-6"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-gold-foreground">
+            <h2
+              style={{ color: "#0d383e", fontWeight: "bold", fontSize: "2rem" }}
+            >
               Need Professional Homecare?
             </h2>
-            <p className="text-xl text-gold-foreground/90 max-w-2xl mx-auto">
+            <p
+              style={{
+                color: "#0d383e",
+                fontSize: "1.25rem",
+                maxWidth: "40rem",
+                margin: "0 auto",
+              }}
+            >
               Don't wait to get the care your loved one deserves. Contact us
               today for a personalized consultation and care plan.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                gap: "1rem",
+                justifyContent: "center",
+                flexWrap: "wrap",
+              }}
+            >
               <Button
                 size="lg"
                 variant="outline"
-                className="border-2 border-gold-foreground text-gold-foreground hover:bg-gold-foreground hover:text-gold font-semibold"
+                style={{
+                  border: "2px solid #0d383e",
+                  color: "#0d383e",
+                  background: "#e7c756",
+                  fontWeight: "bold",
+                }}
               >
-                <Phone className="mr-2 w-5 h-5" />
+                <Phone
+                  style={{ marginRight: "0.5rem", color: "#0d383e" }}
+                  className="mr-2 w-5 h-5"
+                />
                 Call 0112 829 166
               </Button>
               <Button
                 size="lg"
-                className="bg-primary text-primary-foreground hover:bg-primary-dark font-semibold"
+                style={{
+                  background: "#0d383e",
+                  color: "#e7c756",
+                  fontWeight: "bold",
+                }}
               >
                 Schedule Consultation
-                <ArrowRight className="ml-2 w-5 h-5" />
+                <ArrowRight
+                  style={{ marginLeft: "0.5rem", color: "#e7c756" }}
+                  className="ml-2 w-5 h-5"
+                />
               </Button>
             </div>
           </motion.div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

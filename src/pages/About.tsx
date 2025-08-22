@@ -1,5 +1,14 @@
 import { motion } from "framer-motion";
-import { Heart, Target, Eye, Users, Award, Shield, Clock, CheckCircle } from "lucide-react";
+import {
+  Heart,
+  Target,
+  Eye,
+  Users,
+  Award,
+  Shield,
+  Clock,
+  CheckCircle,
+} from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
@@ -8,41 +17,48 @@ const About = () => {
     {
       icon: Heart,
       title: "Mission",
-      description: "Our mission is to provide compassionate, personalized home-based healthcare that promotes patients’ well-being, independence and dignity in the comfort of their own homes."
+      description:
+        "Our mission is to provide compassionate, personalized home-based healthcare that promotes patients’ well-being, independence and dignity in the comfort of their own homes.",
     },
     {
       icon: Eye,
-      title: "Vision", 
-      description: "Our vision is to be a leading home-based healthcare provider in Kenya and beyond, transforming lives through compassionate, personalized care."
+      title: "Vision",
+      description:
+        "Our vision is to be a leading home-based healthcare provider in Kenya and beyond, transforming lives through compassionate, personalized care.",
     },
     {
       icon: Target,
       title: "Values",
-      description: "Compassion: Providing empathetic and personalized care with kindness and respect for each individual's unique challenges. Excellence: Commitment to the highest standards of medical practice and continually improving knowledge and skills to deliver exceptional care."
-    }
+      description:
+        "Compassion: Providing empathetic and personalized care with kindness and respect for each individual's unique challenges. Excellence: Commitment to the highest standards of medical practice and continually improving knowledge and skills to deliver exceptional care.",
+    },
   ];
 
   const approach = [
     {
       icon: Users,
       title: "Personalized Care Plans",
-      description: "Every individual is unique. We develop customized care plans that address specific needs, preferences, and health conditions to ensure optimal outcomes."
+      description:
+        "Every individual is unique. We develop customized care plans that address specific needs, preferences, and health conditions to ensure optimal outcomes.",
     },
     {
       icon: Heart,
       title: "Comfort-Centered Approach",
-      description: "We prioritize emotional wellbeing alongside physical health, creating a comfortable environment that promotes healing and peace of mind."
+      description:
+        "We prioritize emotional wellbeing alongside physical health, creating a comfortable environment that promotes healing and peace of mind.",
     },
     {
       icon: Shield,
       title: "Independence Focus",
-      description: "Our goal is to help clients maintain their independence for as long as possible, supporting their autonomy while ensuring safety and quality care."
+      description:
+        "Our goal is to help clients maintain their independence for as long as possible, supporting their autonomy while ensuring safety and quality care.",
     },
     {
       icon: Award,
       title: "Dignity & Respect",
-      description: "We treat every client with the utmost dignity and respect, honoring their life experiences, preferences, and individual journey."
-    }
+      description:
+        "We treat every client with the utmost dignity and respect, honoring their life experiences, preferences, and individual journey.",
+    },
   ];
 
   const features = [
@@ -50,37 +66,70 @@ const About = () => {
     "Certified and trained healthcare professionals",
     "Comprehensive health assessments and monitoring",
     "Family involvement and regular communication",
-    "Flexible scheduling to meet individual needs", 
+    "Flexible scheduling to meet individual needs",
     "Coordination with primary healthcare providers",
     "Medication management and adherence support",
-    "Quality assurance and continuous improvement"
+    "Quality assurance and continuous improvement",
   ];
 
   return (
-    <div className="min-h-screen">
-      {/* Hero Banner */}
-      <section className="relative py-24 gradient-hero">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <div
+      style={{
+        minHeight: "100vh",
+        background: "var(--color-bg)",
+        color: "var(--color-text)",
+      }}
+    >
+      {/* Hero Banner with Image */}
+      <section
+        className="relative py-24 flex items-center overflow-hidden"
+        style={{ background: "#0d383e" }}
+      >
+        <img
+          src="https://images.unsplash.com/photo-1584515933487-779824d29309?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80"
+          alt="Healthcare hero"
+          className="absolute inset-0 w-full h-full object-cover opacity-20"
+        />
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             className="space-y-6 max-w-4xl mx-auto"
           >
-            <h1 className="text-4xl md:text-6xl font-bold text-primary-foreground">
-              About <span className="text-gold">Evolve Homecare KE</span>
+            <h1
+              style={{
+                color: "#e7c756",
+                fontWeight: "bold",
+                fontSize: "2.5rem",
+                lineHeight: "1.2",
+                textShadow: "0 2px 8px #0d383e",
+              }}
+            >
+              About <span style={{ color: "#fff" }}>Evolve Homecare KE</span>
             </h1>
-            <p className="text-xl text-primary-foreground/90 leading-relaxed">
-              Transforming healthcare delivery by bringing professional, compassionate care 
-              directly to your home. We believe everyone deserves to age with dignity and 
-              independence in familiar surroundings.
+            <p
+              style={{
+                color: "#fff",
+                fontSize: "1.25rem",
+                fontWeight: 600,
+                maxWidth: "40rem",
+                margin: "0 auto",
+              }}
+            >
+              Transforming healthcare delivery by bringing professional,
+              compassionate care directly to your home. We believe everyone
+              deserves to age with dignity and independence in familiar
+              surroundings.
             </p>
           </motion.div>
         </div>
       </section>
 
       {/* Who We Are */}
-      <section className="py-20 bg-white">
+      <section
+        style={{ padding: "5rem 0", background: "#fff", color: "#0d383e" }}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <motion.div
@@ -95,80 +144,45 @@ const About = () => {
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Evolve Homecare KE is a leading provider of comprehensive home-based healthcare 
-                  services throughout Kenya. Founded on the principle that quality healthcare 
-                  should be accessible in the comfort of one's own home, we have been serving 
-                  families and individuals with dedication and excellence.
+                  Evolve Homecare KE is a leading provider of comprehensive
+                  home-based healthcare services throughout Kenya. Founded on
+                  the principle that quality healthcare should be accessible in
+                  the comfort of one's own home, we have been serving families
+                  and individuals with dedication and excellence.
                 </p>
                 <p>
-                  Our team consists of licensed healthcare professionals, certified caregivers, 
-                  and support staff who are passionate about making a difference in people's lives. 
-                  We understand that receiving care at home is not just about medical treatment—it's 
-                  about preserving dignity, maintaining independence, and staying connected to what 
-                  matters most.
+                  Our team consists of licensed healthcare professionals,
+                  certified caregivers, and support staff who are passionate
+                  about making a difference in people's lives. We understand
+                  that receiving care at home is not just about medical
+                  treatment—it's about preserving dignity, maintaining
+                  independence, and staying connected to what matters most.
                 </p>
-                <p>
-                  We provide personalized care plans that balance medical support with compassion, 
-                  ensuring every client feels safe, respected, and cared for at home.
-                </p>
-
               </div>
             </motion.div>
 
+            {/* Image instead of only stats */}
             <motion.div
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
-              className="grid grid-cols-2 gap-6"
+              className="relative"
             >
-              <div className="space-y-6">
-                <Card className="service-card">
-                  <CardContent className="p-6 text-center space-y-3">
-                    <div className="w-12 h-12 rounded-full gradient-hero flex items-center justify-center mx-auto">
-                      <Users className="w-6 h-6 text-primary-foreground" />
-                    </div>
-                    <div className="text-2xl font-bold text-primary">500+</div>
-                    <div className="text-sm text-muted-foreground">Patients Served</div>
-                  </CardContent>
-                </Card>
-                <Card className="service-card">
-                  <CardContent className="p-6 text-center space-y-3">
-                    <div className="w-12 h-12 rounded-full gradient-gold flex items-center justify-center mx-auto">
-                      <Award className="w-6 h-6 text-gold-foreground" />
-                    </div>
-                    <div className="text-2xl font-bold text-primary">20+</div>
-                    <div className="text-sm text-muted-foreground">Healthcare Professionals</div>
-                  </CardContent>
-                </Card>
-              </div>
-              <div className="space-y-6 pt-8">
-                <Card className="service-card">
-                  <CardContent className="p-6 text-center space-y-3">
-                    <div className="w-12 h-12 rounded-full gradient-hero flex items-center justify-center mx-auto">
-                      <Heart className="w-6 h-6 text-primary-foreground" />
-                    </div>
-                    <div className="text-2xl font-bold text-primary">100+</div>
-                    <div className="text-sm text-muted-foreground">Families Supported</div>
-                  </CardContent>
-                </Card>
-                <Card className="service-card">
-                  <CardContent className="p-6 text-center space-y-3">
-                    <div className="w-12 h-12 rounded-full gradient-gold flex items-center justify-center mx-auto">
-                      <Clock className="w-6 h-6 text-gold-foreground" />
-                    </div>
-                    <div className="text-2xl font-bold text-primary">24/7</div>
-                    <div className="text-sm text-muted-foreground">Available Support</div>
-                  </CardContent>
-                </Card>
-              </div>
+              <img
+                src="./src/assets/sarah.jpg"
+                alt="Caregiver with patient"
+                className="rounded-2xl shadow-lg object-cover"
+              />
             </motion.div>
           </div>
         </div>
       </section>
 
       {/* Mission, Vision, Values */}
-      <section className="py-20 gradient-subtle">
+      <section
+        style={{ padding: "5rem 0", background: "#e7c75614", color: "#0d383e" }}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <motion.div
@@ -181,8 +195,9 @@ const About = () => {
                 Our Foundation
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                These core principles drive our commitment to excellence and guide every 
-                decision we make in service of our patients and their families.
+                These core principles drive our commitment to excellence and
+                guide every decision we make in service of our patients and
+                their families.
               </p>
             </motion.div>
           </div>
@@ -198,11 +213,29 @@ const About = () => {
               >
                 <Card className="service-card h-full border-gold/20">
                   <CardContent className="p-8 space-y-4">
-                    <div className="w-16 h-16 rounded-full gradient-gold flex items-center justify-center">
-                      <value.icon className="w-8 h-8 text-gold-foreground" />
+                    <div
+                      style={{
+                        width: "4rem",
+                        height: "4rem",
+                        borderRadius: "50%",
+                        background: "#e7c756",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        margin: "0 auto",
+                        boxShadow: "0 2px 8px #e7c75633",
+                      }}
+                    >
+                      <value.icon
+                        style={{ color: "#fff", width: "2rem", height: "2rem" }}
+                      />
                     </div>
-                    <h3 className="text-xl font-semibold text-primary">{value.title}</h3>
-                    <p className="text-muted-foreground leading-relaxed">{value.description}</p>
+                    <h3 className="text-xl font-semibold text-primary">
+                      {value.title}
+                    </h3>
+                    <p className="text-muted-foreground leading-relaxed">
+                      {value.description}
+                    </p>
                   </CardContent>
                 </Card>
               </motion.div>
@@ -212,7 +245,9 @@ const About = () => {
       </section>
 
       {/* Our Approach */}
-      <section className="py-20 bg-white">
+      <section
+        style={{ padding: "5rem 0", background: "#fff", color: "#0d383e" }}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <motion.div
@@ -225,8 +260,9 @@ const About = () => {
                 Our Approach to Care
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                We believe in a holistic approach that addresses not just medical needs, 
-                but the emotional, social, and spiritual wellbeing of every individual.
+                We believe in a holistic approach that addresses not just
+                medical needs, but the emotional, social, and spiritual
+                wellbeing of every individual.
               </p>
             </motion.div>
           </div>
@@ -242,11 +278,33 @@ const About = () => {
               >
                 <Card className="service-card h-full">
                   <CardContent className="p-6 text-center space-y-4">
-                    <div className="w-14 h-14 rounded-full gradient-hero flex items-center justify-center mx-auto">
-                      <item.icon className="w-7 h-7 text-primary-foreground" />
+                    <div
+                      style={{
+                        width: "3.5rem",
+                        height: "3.5rem",
+                        borderRadius: "50%",
+                        background: "#e7c756",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        margin: "0 auto",
+                        boxShadow: "0 2px 8px #e7c75633",
+                      }}
+                    >
+                      <item.icon
+                        style={{
+                          color: "#fff",
+                          width: "1.5rem",
+                          height: "1.5rem",
+                        }}
+                      />
                     </div>
-                    <h3 className="text-lg font-semibold text-primary">{item.title}</h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{item.description}</p>
+                    <h3 className="text-lg font-semibold text-primary">
+                      {item.title}
+                    </h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed">
+                      {item.description}
+                    </p>
                   </CardContent>
                 </Card>
               </motion.div>
@@ -255,8 +313,10 @@ const About = () => {
         </div>
       </section>
 
-      
-      <section className="py-20 gradient-subtle">
+      {/* What Sets Us Apart with Image */}
+      <section
+        style={{ padding: "5rem 0", background: "#e7c75614", color: "#0d383e" }}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <motion.div
@@ -270,11 +330,19 @@ const About = () => {
                 What Sets Us Apart
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Our commitment to excellence goes beyond basic care provision. We focus on 
-                building lasting relationships, maintaining the highest professional standards, 
-                and continuously improving our services based on feedback and best practices.
+                Our commitment to excellence goes beyond basic care provision.
+                We focus on building lasting relationships, maintaining the
+                highest professional standards, and continuously improving our
+                services based on feedback and best practices.
               </p>
-              <Button size="lg" className="btn-hero text-gold-foreground">
+              <Button
+                size="lg"
+                style={{
+                  background: "#e7c756",
+                  color: "#0d383e",
+                  fontWeight: "bold",
+                }}
+              >
                 Start Your Care Journey
               </Button>
             </motion.div>
@@ -284,21 +352,34 @@ const About = () => {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
-              className="space-y-4"
+              className="space-y-6"
             >
-              {features.map((feature, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, x: 20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ delay: index * 0.1, duration: 0.5 }}
-                  viewport={{ once: true }}
-                  className="flex items-center space-x-3"
-                >
-                  <CheckCircle className="w-5 h-5 text-gold flex-shrink-0" />
-                  <span className="text-muted-foreground">{feature}</span>
-                </motion.div>
-              ))}
+              <img
+                src="./src/assets/knursing.jpg"
+                alt="Happy family with caregiver"
+                className="rounded-2xl shadow-lg object-cover"
+              />
+              <div className="space-y-4">
+                {features.map((feature, index) => (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, x: 20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ delay: index * 0.1, duration: 0.5 }}
+                    viewport={{ once: true }}
+                    className="flex items-center space-x-3"
+                  >
+                    <CheckCircle
+                      style={{
+                        color: "#e7c756",
+                        width: "1.25rem",
+                        height: "1.25rem",
+                      }}
+                    />
+                    <span className="text-muted-foreground">{feature}</span>
+                  </motion.div>
+                ))}
+              </div>
             </motion.div>
           </div>
         </div>
