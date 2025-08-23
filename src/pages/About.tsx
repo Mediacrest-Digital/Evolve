@@ -128,10 +128,10 @@ const About = () => {
 
       {/* Who We Are */}
       <section
-        style={{ padding: "5rem 0", background: "#fff", color: "#0d383e" }}
+        style={{ padding: "2.5rem 0", background: "#fff", color: "#0d383e" }}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -169,11 +169,31 @@ const About = () => {
               viewport={{ once: true }}
               className="relative"
             >
-              <img
-                src="./src/assets/sarah.jpg"
-                alt="Caregiver with patient"
-                className="rounded-2xl shadow-lg object-cover"
-              />
+              <div
+                style={{ position: "relative", width: "100%", height: "400px" }}
+              >
+                <img
+                  src="./src/assets/sarah.jpg"
+                  alt="Caregiver with patient"
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover",
+                    objectPosition: "top center",
+                    borderRadius: "1rem",
+                    boxShadow: "0 4px 24px #0d383e33",
+                  }}
+                />
+                <div
+                  style={{
+                    position: "absolute",
+                    inset: 0,
+                    borderRadius: "1rem",
+                    background:
+                      "linear-gradient(180deg, rgba(13,56,62,0.10) 0%, rgba(231,199,86,0.07) 100%)",
+                  }}
+                />
+              </div>
             </motion.div>
           </div>
         </div>
@@ -354,11 +374,31 @@ const About = () => {
               viewport={{ once: true }}
               className="space-y-6"
             >
-              <img
-                src="./src/assets/knursing.jpg"
-                alt="Happy family with caregiver"
-                className="rounded-2xl shadow-lg object-cover"
-              />
+              <div
+                style={{ position: "relative", width: "100%", height: "350px" }}
+              >
+                <img
+                  src="./src/assets/knursing.jpg"
+                  alt="Happy family with caregiver"
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover",
+                    objectPosition: "center center",
+                    borderRadius: "1rem",
+                    boxShadow: "0 4px 24px #0d383e33",
+                  }}
+                />
+                <div
+                  style={{
+                    position: "absolute",
+                    inset: 0,
+                    borderRadius: "1rem",
+                    background:
+                      "linear-gradient(180deg, rgba(13,56,62,0.08) 0%, rgba(231,199,86,0.05) 100%)",
+                  }}
+                />
+              </div>
               <div className="space-y-4">
                 {features.map((feature, index) => (
                   <motion.div

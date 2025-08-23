@@ -165,10 +165,7 @@ const Services = () => {
     },
     {
       category: "Specialized Care",
-      services: [
-        "Cancer care support",
-        "Stroke recovery care",
-      ],
+      services: ["Cancer care support", "Stroke recovery care"],
     },
     {
       category: "Support Services",
@@ -184,9 +181,18 @@ const Services = () => {
   ];
 
   return (
-  <div style={{ minHeight: '100vh', background: 'var(--color-bg)', color: 'var(--color-text)' }}>
+    <div
+      style={{
+        minHeight: "100vh",
+        background: "var(--color-bg)",
+        color: "var(--color-text)",
+      }}
+    >
       {/* Hero Section with Background Image */}
-  <section className="relative py-24 flex items-center overflow-hidden" style={{ background: '#0d383e' }}>
+      <section
+        className="relative py-24 flex items-center overflow-hidden"
+        style={{ background: "#0d383e" }}
+      >
         <img
           src="./src/assets/sarah.jpg"
           alt="Healthcare services hero"
@@ -199,10 +205,26 @@ const Services = () => {
             transition={{ duration: 0.8 }}
             className="space-y-6 max-w-4xl mx-auto"
           >
-            <h1 style={{ color: '#e7c756', fontWeight: 'bold', fontSize: '2.5rem', lineHeight: '1.2', textShadow: '0 2px 8px #0d383e' }}>
-              Our <span style={{ color: '#fff' }}>Healthcare Services</span>
+            <h1
+              style={{
+                color: "#e7c756",
+                fontWeight: "bold",
+                fontSize: "2.5rem",
+                lineHeight: "1.2",
+                textShadow: "0 2px 8px #0d383e",
+              }}
+            >
+              Our <span style={{ color: "#fff" }}>Healthcare Services</span>
             </h1>
-            <p style={{ color: '#fff', fontSize: '1.25rem', fontWeight: 600, maxWidth: '40rem', margin: '0 auto' }}>
+            <p
+              style={{
+                color: "#fff",
+                fontSize: "1.25rem",
+                fontWeight: 600,
+                maxWidth: "40rem",
+                margin: "0 auto",
+              }}
+            >
               Comprehensive home-based healthcare services designed to meet your
               unique needs and support your journey toward optimal health and
               independence.
@@ -212,7 +234,9 @@ const Services = () => {
       </section>
 
       {/* Services Overview with Image */}
-  <section style={{ padding: '5rem 0', background: '#fff', color: '#0d383e' }}>
+      <section
+        style={{ padding: "5rem 0", background: "#fff", color: "#0d383e" }}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-16">
             <motion.div
@@ -226,23 +250,30 @@ const Services = () => {
                 Comprehensive Care at Home
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Our services are designed to provide hospital-quality care in the comfort
-                of your own home. From basic personal care to complex medical procedures,
-                our certified professionals ensure you receive the highest standard of
-                healthcare with dignity and compassion.
+                Our services are designed to provide hospital-quality care in
+                the comfort of your own home. From basic personal care to
+                complex medical procedures, our certified professionals ensure
+                you receive the highest standard of healthcare with dignity and
+                compassion.
               </p>
               <div className="space-y-3">
                 <div className="flex items-center space-x-3">
                   <div className="w-2 h-2 rounded-full bg-gold" />
-                  <span className="text-muted-foreground">Licensed healthcare professionals</span>
+                  <span className="text-muted-foreground">
+                    Licensed healthcare professionals
+                  </span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-2 h-2 rounded-full bg-gold" />
-                  <span className="text-muted-foreground">24/7 emergency support available</span>
+                  <span className="text-muted-foreground">
+                    24/7 emergency support available
+                  </span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-2 h-2 rounded-full bg-gold" />
-                  <span className="text-muted-foreground">Personalized care plans</span>
+                  <span className="text-muted-foreground">
+                    Personalized care plans
+                  </span>
                 </div>
               </div>
             </motion.div>
@@ -259,10 +290,23 @@ const Services = () => {
                 alt="Healthcare professional providing care"
                 className="rounded-2xl shadow-lg object-cover w-full h-[400px]"
               />
-              <div className="absolute -bottom-6 -left-6 w-32 h-32 rounded-2xl gradient-gold flex items-center justify-center shadow-lg">
+              <div
+                className="absolute -bottom-6 -left-6 w-32 h-32 rounded-2xl flex items-center justify-center shadow-lg"
+                style={{ background: "#0d383e", border: "3px solid #e7c756" }}
+              >
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-gold-foreground">10+</div>
-                  <div className="text-xs text-gold-foreground/80">Services</div>
+                  <div
+                    className="text-2xl font-bold"
+                    style={{ color: "#e7c756" }}
+                  >
+                    10+
+                  </div>
+                  <div
+                    className="text-xs"
+                    style={{ color: "#fff", opacity: 0.8 }}
+                  >
+                    Services
+                  </div>
                 </div>
               </div>
             </motion.div>
@@ -298,8 +342,26 @@ const Services = () => {
               >
                 <Card className="service-card h-full border-gold/20 hover:shadow-xl transition-all duration-300">
                   <CardHeader className="pb-4">
-                    <div style={{ width: '3.5rem', height: '3.5rem', borderRadius: '50%', background: '#e7c756', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1rem', boxShadow: '0 2px 8px #e7c75633' }}>
-                      <service.icon style={{ color: '#fff', width: '1.5rem', height: '1.5rem' }} />
+                    <div
+                      style={{
+                        width: "3.5rem",
+                        height: "3.5rem",
+                        borderRadius: "50%",
+                        background: "#e7c756",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        marginBottom: "1rem",
+                        boxShadow: "0 2px 8px #e7c75633",
+                      }}
+                    >
+                      <service.icon
+                        style={{
+                          color: "#fff",
+                          width: "1.5rem",
+                          height: "1.5rem",
+                        }}
+                      />
                     </div>
                     <CardTitle className="text-xl text-primary">
                       {service.title}
@@ -328,7 +390,9 @@ const Services = () => {
       </section>
 
       {/* Extended Services with Featured Image */}
-  <section style={{ padding: '5rem 0', background: '#e7c75614', color: '#0d383e' }}>
+      <section
+        style={{ padding: "5rem 0", background: "#e7c75614", color: "#0d383e" }}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-16">
             <motion.div
@@ -343,10 +407,28 @@ const Services = () => {
                 alt="Advanced medical equipment and care"
                 className="rounded-2xl shadow-lg object-cover w-full h-[400px]"
               />
-              <div className="absolute -top-6 -right-6 w-32 h-32 rounded-2xl gradient-hero flex items-center justify-center shadow-lg">
+              <div
+                className="absolute -top-6 -right-6 w-32 h-32 rounded-2xl flex items-center justify-center shadow-lg"
+                style={{ background: "#0d383e", border: "3px solid #e7c756" }}
+              >
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-primary-foreground">24/7</div>
-                  <div className="text-xs text-primary-foreground/80">Support</div>
+                  <div
+                    className="text-2xl font-bold"
+                    style={{ color: "#e7c756" }}
+                  >
+                    24/7
+                  </div>
+                  <div
+                    className="text-xs"
+                    style={{
+                      color: "#fff",
+                      opacity: 0.9,
+                      fontWeight: "bold",
+                      letterSpacing: "1px",
+                    }}
+                  >
+                    Support
+                  </div>
                 </div>
               </div>
             </motion.div>
@@ -362,10 +444,10 @@ const Services = () => {
                 Extended Specialized Services
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Beyond our core services, we offer advanced medical support and therapeutic
-                interventions. Our specialized programs are designed to address complex
-                health conditions and provide comprehensive care solutions for patients
-                with diverse medical needs.
+                Beyond our core services, we offer advanced medical support and
+                therapeutic interventions. Our specialized programs are designed
+                to address complex health conditions and provide comprehensive
+                care solutions for patients with diverse medical needs.
               </p>
             </motion.div>
           </div>
@@ -385,8 +467,27 @@ const Services = () => {
                 >
                   <AccordionTrigger className="px-6 py-4 text-left hover:no-underline">
                     <div className="flex items-center space-x-3">
-                      <div style={{ width: '2.5rem', height: '2.5rem', borderRadius: '50%', background: '#e7c756', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 2px 8px #e7c75633' }}>
-                        <span style={{ color: '#fff', fontWeight: 'bold', fontSize: '1rem' }}>{category.services.length}</span>
+                      <div
+                        style={{
+                          width: "2.5rem",
+                          height: "2.5rem",
+                          borderRadius: "50%",
+                          background: "#e7c756",
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                          boxShadow: "0 2px 8px #e7c75633",
+                        }}
+                      >
+                        <span
+                          style={{
+                            color: "#fff",
+                            fontWeight: "bold",
+                            fontSize: "1rem",
+                          }}
+                        >
+                          {category.services.length}
+                        </span>
                       </div>
                       <span className="text-lg font-semibold text-primary">
                         {category.category}
@@ -400,7 +501,16 @@ const Services = () => {
                           key={serviceIndex}
                           className="flex items-center text-sm bg-white/40 rounded-lg p-3 hover:bg-white/60 transition-colors duration-200"
                         >
-                          <div style={{ width: '0.5rem', height: '0.5rem', borderRadius: '50%', background: '#0d383e', marginRight: '0.75rem', flexShrink: 0 }} />
+                          <div
+                            style={{
+                              width: "0.5rem",
+                              height: "0.5rem",
+                              borderRadius: "50%",
+                              background: "#0d383e",
+                              marginRight: "0.75rem",
+                              flexShrink: 0,
+                            }}
+                          />
                           <span className="text-muted-foreground font-medium">
                             {service}
                           </span>
@@ -416,13 +526,23 @@ const Services = () => {
       </section>
 
       {/* CTA Section with Background Image */}
-  <section className="relative py-20 flex items-center overflow-hidden" style={{ background: '#0d383e' }}>
+      <section
+        className="relative py-20 flex items-center overflow-hidden"
+        style={{ background: "#0d383e" }}
+      >
         <img
           src="./src/assets/grace.jpg"
           alt="Happy family receiving care"
           className="absolute inset-0 w-full h-full object-cover"
         />
-  <div style={{ position: 'absolute', inset: 0, background: '#0d383e', opacity: 0.9 }} />
+        <div
+          style={{
+            position: "absolute",
+            inset: 0,
+            background: "#0d383e",
+            opacity: 0.9,
+          }}
+        />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -431,23 +551,58 @@ const Services = () => {
             viewport={{ once: true }}
             className="text-center space-y-8"
           >
-            <div style={{ marginBottom: '2rem' }}>
-              <h2 style={{ color: '#e7c756', fontWeight: 'bold', fontSize: '2rem' }}>
+            <div style={{ marginBottom: "2rem" }}>
+              <h2
+                style={{
+                  color: "#e7c756",
+                  fontWeight: "bold",
+                  fontSize: "2rem",
+                }}
+              >
                 Ready to Get Started?
               </h2>
-              <p style={{ color: '#fff', fontSize: '1.25rem', maxWidth: '40rem', margin: '0 auto' }}>
+              <p
+                style={{
+                  color: "#fff",
+                  fontSize: "1.25rem",
+                  maxWidth: "40rem",
+                  margin: "0 auto",
+                }}
+              >
                 Contact us today to discuss your specific needs and learn how
                 our services can support your health and independence journey.
               </p>
             </div>
-            <div style={{ display: 'flex', flexDirection: 'row', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-              <Button size="lg" style={{ background: '#e7c756', color: '#0d383e', fontWeight: 'bold', boxShadow: '0 2px 8px #0d383e' }}>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                gap: "1rem",
+                justifyContent: "center",
+                flexWrap: "wrap",
+              }}
+            >
+              <Button
+                size="lg"
+                style={{
+                  background: "#e7c756",
+                  color: "#0d383e",
+                  fontWeight: "bold",
+                  boxShadow: "0 2px 8px #0d383e",
+                }}
+              >
                 Schedule Free Consultation
               </Button>
               <Button
                 size="lg"
                 variant="outline"
-                style={{ border: '2px solid #e7c756', color: '#e7c756', background: '#0d383e', fontWeight: 'bold', boxShadow: '0 2px 8px #0d383e' }}
+                style={{
+                  border: "2px solid #e7c756",
+                  color: "#e7c756",
+                  background: "#0d383e",
+                  fontWeight: "bold",
+                  boxShadow: "0 2px 8px #0d383e",
+                }}
               >
                 Call 0112 829 166
               </Button>
