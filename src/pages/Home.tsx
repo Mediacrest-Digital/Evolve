@@ -8,12 +8,9 @@ import {
   Users,
   Award,
   ArrowRight,
-  Phone,
   Stethoscope,
   Cross,
   Activity,
-  Brain,
-  Utensils,
   Home as HomeIcon,
   Car,
   Pill,
@@ -21,10 +18,9 @@ import {
   Sparkles,
   Target,
   Eye,
-  Calendar,
   ClipboardCheck,
   MessageCircle,
-  ThumbsUp,
+  
   Quote,
   ChevronDown,
   ChevronUp,
@@ -37,11 +33,6 @@ import { useState } from "react";
 const Home = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
-  const trustBadges = [
-    { icon: CheckCircle, text: "24/7 Support" },
-    { icon: Award, text: "Certified Caregivers" },
-    { icon: Heart, text: "Personalized Care" },
-  ];
 
   const services = [
     {
@@ -124,11 +115,7 @@ const Home = () => {
     //   title: "Dementia Care",
     //   description: "Specialized memory care",
     // },
-    {
-      icon: Utensils,
-      title: "Nutrition Support",
-      description: "Meal planning and preparation",
-    },
+    
     {
       icon: HomeIcon,
       title: "Home Safety",
@@ -319,11 +306,7 @@ const Home = () => {
                   padding: "0.75rem 2rem",
                   boxShadow: "0 2px 8px #0d383e",
                 }}
-                onClick={() =>
-                  document
-                    .getElementById("services")
-                    ?.scrollIntoView({ behavior: "smooth" })
-                }
+                onClick={() => window.location.href = '/services'}
               >
                 Explore Our Services
                 <ArrowRight
@@ -341,11 +324,8 @@ const Home = () => {
                   fontWeight: "bold",
                   boxShadow: "0 2px 8px #0d383e",
                 }}
-                onClick={() =>
-                  document
-                    .getElementById("contact")
-                    ?.scrollIntoView({ behavior: "smooth" })
-                }
+                onClickCapture={() => window.location.href = '/contact'}
+                
               >
                 Contact Us
               </Button>

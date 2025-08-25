@@ -590,6 +590,7 @@ const Services = () => {
                   fontWeight: "bold",
                   boxShadow: "0 2px 8px #0d383e",
                 }}
+                onClick={() => window.location.href = '/contact'}
               >
                 Schedule Free Consultation
               </Button>

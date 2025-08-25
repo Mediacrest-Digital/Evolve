@@ -6,7 +6,6 @@ import {
   Users,
   Award,
   Shield,
-  Clock,
   CheckCircle,
 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
@@ -362,6 +361,7 @@ const About = () => {
                   color: "#0d383e",
                   fontWeight: "bold",
                 }}
+                onClick={() => window.location.href = '/contact'}
               >
                 Start Your Care Journey
               </Button>
